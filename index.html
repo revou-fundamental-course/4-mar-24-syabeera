@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator BMI</title>
+    <style>
+        body {
+            font-family: helvetica;
+            font-weight: lighter;
+        }
+    </style>
+    <link rel="stylesheet" href="/4-mar-24-syabeera/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator BMI</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <!-- Form Display -->
+            <div class="container-item">
+                <h2>Form BMI</h2>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki untuk tubuh yang menunjang 
+                    penampilan, berat badan ideal juga menandakan tubuh yang sehat. Bagaimana denganmu?
+                    Yuk, hitung sekarang di Calculator BMI</p>
+                    <section class="container-form">
+                        <div>
+                            <label>Jenis Kelamin</label><br/>
+                            <input type="radio" name="sex" id="sex-man">
+                            <label for="sex-man">Laki-laki</label>
+                            <input type="radio" name="sex" id="sex-woman">
+                            <label for="sex-woman">Perempuan</label>
+                        </div>
+                        <div>
+                            <label>Berat Badan (kg)</label><br/>
+                            <input type="number" class="form-item" id="weight">
+                            <br/>
+                            <label>Usia (tahun)</label><br/>
+                            <input type="number" class="form-item" id="age">
+                            <br/>
+                            <label>Tinggi badan (cm)</label><br/>
+                            <input type="number" class="form-item" id="height">
+                        </div>
+                        <div>
+                            <button type="button" id="calculate-button">Hitung BMI</button>
+                            <button type="button" id="reset-button">Reset</button>
+                        </div>
+                    </section>
+                <!-- Explanation -->
+                <div class="explain-item">
+                        <h3>Keunggulan fitur</h3>
+                        <ol type="1">
+                            <li>Menghitung berat badan</li>
+                            <li>Menentukan kategori berat badan ideal atau tidak</li>
+                            <li>Mempersiapkan program penurunan berat badan</li>
+                        </ol>
+                        <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                            mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                            selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                            <br/>
+                            <br/>
+                            Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai 
+                            umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram)  dibagi
+                            dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M^2.
+                        </p>
+                </div>
+	            </div>
+			<!-- Result Display -->
+			<div class="container-item">
+			    <h2>Result</h2>    
+			    <section class="container-result">
+			        <p id="result-title">Hasil BMI Anda</p>
+			        <h1 id="bmi">0</h1>
+			        <p id="result-category"></p>
+			        <button type="button" id="download-button">Download Hasil BMI</button>
+			    </section>
+			    <!-- Explanation -->
+			    <div class="explain-bmi">
+			        <h3 id="descrip"></h3>
+			        <p id="explanation"></p>
+					<button type="button" id="consultant-button" style="display: none;">Konsultasi Ahli Gizi</button>
+			        <p id="explanation-2"></p>
+					<p id="effects"></p>
+					<p id="effect"></p>
+			    </div>
+			</div>
+		</main>
+	<script src="/4-mar-24-syabeera/js/script.js"></script>
+</body>
+</html>
